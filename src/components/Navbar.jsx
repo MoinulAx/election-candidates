@@ -1,5 +1,7 @@
 import React from 'react'
 import './styles/styles.css'
+import "./src/assets/image.jpg"
+
 
 const Navbar = () => {
   return (

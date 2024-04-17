@@ -1,5 +1,8 @@
 import React from 'react'
 
+import './styles/styles.css'
+import Card from './Card';
+
 const List = () => {
     const candidateNames = [
         "William Cotter", "Patrick Denman", "George Devolder-Santos", "Ryan Kalata",
@@ -13,8 +16,15 @@ const List = () => {
     ];
 
   return (
-    <div>List</div>
+    <div className='container'>
+      {candidateNames.map(candidate =>{
+       return  <Card candidate={candidate} />
+      })
+    }
+    </div>
   )
+    
+      
 }
 
 export default List
